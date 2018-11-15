@@ -25,7 +25,7 @@ class LuhnTest {
     @Ignore
     @Test
     fun simpleValidSINThatBecomesInvalidIfReversed() {
-        assertTrue(Luhn.isValid("59"))
+        assertFalse(Luhn.isValid("59"))
     }
 
     @Ignore
